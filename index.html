@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="normalize.css">
+  <title>Pricing component</title>
+</head>
+<body>
+  <!-- SITENAV -->
+<div class="sitenav">
+  <h1 class="sitenav-h1">Our pricing</h1>
+
+  <!-- SITENAV-FORM -->
+  <form action="https://htmlacademy.ru" class="pricing-switch" method="GET">
+    <!-- SWITCH-INPUT -->
+    <div class="switch">
+      <input class="switch-input-annual" type="radio" name="payment_period" value="annual" id="annual-payment-radio">
+
+      <input class="switch-input-monthly" type="radio" name="payment_period" value="monthly" id="monthly-payment-radio" checked>
+
+      <label for="annual-payment-radio" class="pricing-label">Annualy</label>
+      <!-- SWITCH-CONTROL -->
+      <div class="switch-control">
+        <div class="switch-circle"></div>
+        <label for="annual-payment-radio" class="switch-control-annual"></label>
+        <label for="monthly-payment-radio" class="switch-control-monthly"></label>
+      </div>
+      <label for="monthly-payment-radio" class="pricing-label">Monthly</label>
+    </div>
+  </form>
+</div>
+
+<!-- SITE-MAIN -->
+<main class="site-main container">
+  <div class="site-main-div">
+    <h2 class="site-main-div-h2">Basic</h2>
+    <section class="site-main-section" data-payment-annual="199.99" data-payment-monthly="19.99">
+      <h4>$</h4>
+      <h1 class="pricing-plan-value site-main-div-h1">19.99</h1>
+    </section>
+    <h3 class="site-main-div-h3">500 GB Storage</h3>
+    <h3 class="site-main-div-h3">2 Users Allowed</h3>
+    <h3 class="site-main-div-h3">Send up to 3 GB</h3>
+    <button class="site-main-div-link">Learn more</button>
+  </div>
+
+  <div class="site-main-div site-main-div-2">
+    <h2 class="site-main-div-h2 site-main-div-h2-2">Professional</h2>
+    <section class="site-main-section site-main-section-2" data-payment-annual="249.99" data-payment-monthly="24.99">
+      <h4 class="as2">$</h4>
+      <h1 class="pricing-plan-value site-main-div-h1 site-main-div-h1-2">24.99</h1>
+    </section>
+    <h3 class=" site-main-div-h3 site-main-div-h3-2">1 TB Storage</h3>
+    <h3 class=" site-main-div-h3 site-main-div-h3-2">5 Users Allowed</h3>
+    <h3 class=" site-main-div-h3 site-main-div-h3-2">Send up to 10 GB</h3>
+    <button class="site-main-div-link
+    site-main-div-link-2">Learn more</button>
+  </div>
+
+  <div class="site-main-div site-main-div-3">
+    <h2 class="site-main-div-h2 site-main-div-h2-3">Master</h2>
+    <section class="site-main-section" data-payment-annual="399.99" data-payment-monthly="39.99">
+      <h4>$</h4>
+      <h1 class="pricing-plan-value site-main-div-h1 site-main-div-h1-3">39.99</h1>
+    </section>
+    <h3 class="site-main-div-h3 site-main-div-h3-3">2 TB Storage</h3>
+    <h3 class="site-main-div-h3 site-main-div-h3-3">10 Users Allowed</h3>
+    <h3 class="site-main-div-h3 site-main-div-h3-3">Send up to 20 GB</h3>
+    <button class="site-main-div-link">Learn more</button>
+  </div>
+</main>
+</body>
+</html>
+<script src="main.js"></script>
